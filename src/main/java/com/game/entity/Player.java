@@ -12,6 +12,7 @@ public class Player {
     private long id;
     @Column(name="name")
     private String name;
+
     @Column(name="title")
     private String title;
     @Enumerated(EnumType.STRING)
@@ -121,7 +122,7 @@ public class Player {
         this.birthday = birthday;
     }
 
-    public boolean isBanned() {
+    public Boolean isBanned() {
         return banned;
     }
 
